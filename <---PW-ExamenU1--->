@@ -1,0 +1,52 @@
+<---PW-ExamenU1--->
+Oscar Rodolfo Barraza Olivares
+#No. de Control 14210495
+
+1.-
+
+Test
+├── Test
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+
+2.-
+
+runserver
+migrate
+makemigrations
+
+3.-
+
+Las urls globales son servidas fuera de la app y las locales son dentro del proyecto.
+
+4.-
+def = Index(request):
+	return render(request, "Index.html")
+
+5.-
+
+class Index_View (generic.IndexView):
+	template-name = ("tweet/Index.html")
+	model = Tweet
+
+6.-
+
+sudo django-admin startproject ProyectName
+
+7.-
+
+sudo django-admin startapp AppName
+
+8.-
+
+Es en donde se encuentran todas las configuraciones que podemos agregar o modificar para nuestro proyecto.
+
+9.-
+
+python3 manage.py migrate
+
+10.- 
+
+python3 manage.py makemigrations
